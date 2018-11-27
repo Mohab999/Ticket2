@@ -52,6 +52,8 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 }
  
 });
+const Discord = require("discord.js");
+const client = new Discord.Client();
 var prefix = "d";
 var adminprefix = '--'
 const developers = ["516226504066072588"]
@@ -87,4 +89,11 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
