@@ -52,8 +52,8 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 }
  
 });
-var adminprefix = 'البريفكس'
-const developers = ["الايدي"]
+var adminprefix = '--'
+const developers = ["516226504066072588"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
