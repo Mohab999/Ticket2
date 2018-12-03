@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
  
-const prefix = "!5";
+const prefix = "&";
 client.on("message", (message) => {
 if (message.content.toLowerCase().startsWith(prefix + `new`)) {
     const reason = message.content.split(" ").slice(1).join(" ");
@@ -52,7 +52,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 }
  
 });
-var adminprefix = '!5'
+var adminprefix = '--'
 const developers = ["516226504066072588"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
